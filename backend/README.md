@@ -205,11 +205,11 @@ This API will return three error types when requests fail:
 
 - Deletes the questions realted to the passed `question_id` and returns the deleted id and the success value.
 - Required Arguments: `question_id` is 
-- Sample: `curl -X DELETE http://127.0.0.1:5000/questions/1`
+- Sample: `curl -X DELETE http://127.0.0.1:5000/questions/10`
 
 ```
 {
-  "deleted": 1, 
+  "deleted": 10, 
   "success": true
 }
 ```
