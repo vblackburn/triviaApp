@@ -133,12 +133,12 @@ def create_app(test_config=None):
     
     data = request.get_json()
 
-    new_question = data.get('question', None)
-    new_answer = data.get('answer', None)
+    new_question = data.get('question', '')
+    new_answer = data.get('answer', '')
     new_category = data.get('category', None)
     new_difficulty = data.get('difficulty', None)
 
-    if new_question is None or new_answer is None or new_category is None or new_difficulty is None:
+    if new_question == '' or new_answer == '' or new_category is None or new_difficulty is None:
       abort(400)
     
     try:
